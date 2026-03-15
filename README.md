@@ -27,4 +27,6 @@ A Flask web application for managing patient queues using FIFO (First-In-First-O
 5. Run: `python app.py`
 6. Open browser to `http://127.0.0.1:5000`
 
+NOTE: this should be done on the terminal.
+
 ## Project Structure
