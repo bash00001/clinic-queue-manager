@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash
+from flask import Flask, render_template, request, redirect, flash, url_for
 
 # Import our classes from models.py
 from models import Patient, ClinicQueue
