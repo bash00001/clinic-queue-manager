@@ -8,7 +8,8 @@ A Flask or Simple web application for managing patient queues using FIFO (First-
 - View waiting queue in fair FIFO order
 - Track currently serving patient
 - Monitor statistics (waiting count, total served)
-- Automatic timestamps for arrivals
+- Automatic timestamps for arrivals 
+- Aids in proper management of queue
 
 ## Technologies
 
