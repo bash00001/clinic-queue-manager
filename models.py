@@ -91,14 +91,3 @@ class ClinicQueue:
         for i, patient in enumerate(self._queue):
             positions.append((i + 1, patient))
         return positions
-    
-
-class Appointment(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    patient_id = db.Column(db.Integer, db.ForeignKey('patient.id'), nullable=False)
-    appointment_date = db.Column(db.DateTime, nullable=False)
-    reason = db.Column(db.Text)
-    status = db.Column(db.String(20), default='scheduled')  # scheduled, completed, cancelled
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    
-    patient = db.relationship('Patient', backref='appointments')    

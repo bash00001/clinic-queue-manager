@@ -28,6 +28,6 @@ A Flask or Simple web application for managing patient queues using FIFO (First-
 5. Run: `python app.py`
 6. Open browser to `http://127.0.0.1:5000`
 
-NOTE: this should be done on the terminal.
+NOTE: no.2 to 5 should be done on the terminal
 
 ## Project Structure
