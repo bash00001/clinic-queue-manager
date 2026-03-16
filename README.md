@@ -1,6 +1,6 @@
 # 🏥 Health Clinic Queue Manager
 
-A Flask web application for managing patient queues using FIFO (First-In-First-Out).
+A Flask or Simple web application for managing patient queues using FIFO (First-In-First-Out).
 
 ## What This App Does
 
