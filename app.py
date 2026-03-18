@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash, url_for
+from flask import Flask, render_template, request, redirect, flash
 
 # Import our classes from models.py
 from models import Patient, ClinicQueue
@@ -75,26 +75,4 @@ def serve_next():
 
 # This runs the app
 if __name__ == '__main__':
-    app.run(debug=True)
-
-
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        
-        # Check if user already exists
-        existing = User.query.filter_by(username=username).first()
-        if existing:
-            return 'Username already exists'
-        
-        # Create new user
-        new_user = User(username=username)
-        new_user.set_password(password)
-        db.session.add(new_user)
-        db.session.commit()
-        
-        return redirect(url_for('login'))
-    
-    return render_template('register_staff.html')    
+    app.run(host='0.0.0.0', port=8080)
